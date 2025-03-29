@@ -1,14 +1,14 @@
 ticker_clear;
-Moclient_SoundTips_Disable;
-MoClient_TextOutput_Null;
+DearMoments_SoundTips_Disable;
+DearMoments_TextOutput_Null;
 nomove;
 attack -1009 0 0;
 attack2 -1009 0 0;
 .rapidfire_disable;
-exec MoClient/src/main/Features/Modules/ModulesRegister.mo
+exec DearMoments/src/main/Features/Modules/ModulesRegister.mo
 /reload_command;
 /reload_userspace;
-exec MoClient/Userspace/UserValue
+exec DearMoments/Userspace/UserValue
 +BUGkey
-.moclient_colorful_loop
+.DearMoments_colorful_loop
 mout_reload

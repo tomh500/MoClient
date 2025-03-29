@@ -8,9 +8,9 @@ alias /fps_recovery fps_max 540
 alias /fps_low fps_max 64
 
 //定义重置用户空间
-alias /reload_userspace "exec MoClient/Userspace/UserKeyBinds.cfg;exec MoClient/Userspace/UserSetting.cfg"
+alias /reload_userspace "exec DearMoments/Userspace/UserKeyBinds.cfg;exec DearMoments/Userspace/UserSetting.cfg"
 
-alias /reload_command "exec Moclient/src/main/Commands/_init_.mo"
+alias /reload_command "exec DearMoments/src/main/Commands/_init_.mo"
 
 //定义默认准心颜色
 alias /crosshair_color_recovery "rec_crosshair_r;rec_crosshair_g;rec_crosshair_b"

@@ -1,1 +1,1 @@
-exec MoClient/src/main/Features/OutputSystem/SoundTips/_init_.mo
+exec DearMoments/src/main/Features/OutputSystem/SoundTips/_init_.mo
