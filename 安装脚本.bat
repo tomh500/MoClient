@@ -16,7 +16,7 @@ echo Expected folder name: %EXPECTED_FOLDER_NAME%
 
 if /I "%CURRENT_FOLDER_NAME%" neq "%EXPECTED_FOLDER_NAME%" (
     echo ERROR: The current folder is wrong!! Please check the Guide again
-    echo 错误: 你的 MoClient 放置位置错误， 请重新查看教程的安装指引
+    echo 错误: 你的 Square 放置位置错误， 请重新查看教程的安装指引
     pause
     exit /b 1
 )
@@ -54,17 +54,17 @@ for /f "tokens=2 delims=:" %%B in ("!LAST_LINE!") do set "LAST_LINE_CONTENT=%%B"
 :: 输出最后一行内容，用于调试
 echo Last line content: !LAST_LINE_CONTENT!
 
-:: 检查最后一行是否是 "exec MoClient/Setup"
-if /i not "!LAST_LINE_CONTENT!"=="exec MoClient/Setup" (
-    if /i not "!LAST_LINE_CONTENT!"=="exec MoClient/Setup " (
-        echo Last line is not "exec MoClient/Setup". Adding it to the file...
+:: 检查最后一行是否是 "exec Square/Setup"
+if /i not "!LAST_LINE_CONTENT!"=="exec Square/Setup" (
+    if /i not "!LAST_LINE_CONTENT!"=="exec Square/Setup " (
+        echo Last line is not "exec Square/Setup". Adding it to the file...
         echo.  >> "%AUTOEXEC_FILE%" 
-        echo exec MoClient/Setup >> "%AUTOEXEC_FILE%"
+        echo exec Square/Setup >> "%AUTOEXEC_FILE%"
     ) else (
-        echo Last line is already "exec MoClient/Setup". No changes made.
+        echo Last line is already "exec Square/Setup". No changes made.
     )
 ) else (
-    echo Last line is already "exec MoClient/Setup". No changes made.
+    echo Last line is already "exec Square/Setup". No changes made.
 )
 
 echo Done

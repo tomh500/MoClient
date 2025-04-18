@@ -1,7 +1,7 @@
 [安装方式]
-将项目放入CS2的CFG文件夹，确保项目文件夹名字为MoClient
-本教程文件应该存在于game/csgo/cfg/MoClient/读我README.txt
-在steam属性为CS2添加启动项+exec MoClient/Setup
+将项目放入CS2的CFG文件夹，确保项目文件夹名字为Square
+本教程文件应该存在于game/csgo/cfg/Square/读我README.txt
+在steam属性为CS2添加启动项+exec Square/Setup
 
 [更改偏好设置]
 在项目文件夹的Userspace文件夹内，修改UserKeyBinds、UserSetting、UserValue并保存即可
